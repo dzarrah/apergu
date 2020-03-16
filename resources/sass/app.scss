@@ -1,13 +1,31 @@
 // Fonts
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
-
-// Variables
 @import "variables";
 
-// Bootstrap
-//per modul we, tong kabehanana
-// @import '~bootstrap/scss/bootstrap';
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, sans-serif;
+}
 
 [v-cloak] {
     display: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .links {
+        display: flex;
+        list-style: none;
+        text-transform: uppercase;
+
+        li {
+            padding-left: 1em;
+            letter-spacing: 0.15em;
+            font-size: 14px;
+        }
+    }
 }

@@ -7,11 +7,11 @@
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     </head>
     <body>
-        {{-- @include('header') --}}
+        @include('header')
         <div id="app">
-            <div v-cloak>
+            {{-- <div v-cloak> --}}
                 <router-view></router-view>
-            </div>
+            {{-- </div> --}}
         </div>
         {{-- @include('footer') --}}
         <script src="{{ asset('js/app.js') }}" defer></script>
